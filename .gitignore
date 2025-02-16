@@ -5,6 +5,7 @@
 __pycache__/
 
 # Configurações do ambiente virtual
+kivy_venv
 venv/
 .env/
 *.env
