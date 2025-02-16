@@ -1,0 +1,35 @@
+BoxLayout:
+    orientation: 'vertical'
+
+    # Layout para entrada de nova tarefa
+    BoxLayout:
+        size_hint_y: 0.1
+        height: '40dp'
+        padding: [10, 10]
+
+        TextInput:
+            id: input_text
+            hint_text: 'Adicione uma tarefa'
+            size_hint_x: 0.8
+            multiline: False
+
+        Button:
+            text: 'Adicionar'
+            size_hint_x: 0.2
+            on_press: app.add_task(None)
+
+    # Layout para exibir as tarefas
+    ScrollView:
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint_y: None
+            height: self.minimum_height
+            padding: [10, 10]
+            spacing: 50
+
+            GridLayout:
+                id: task_list
+                cols: 2
+                size_hint_y: None
+                height: self.minimum_height
+                spacing: 50
