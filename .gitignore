@@ -1,0 +1,33 @@
+# Arquivos Python compilados
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Configurações do ambiente virtual
+venv/
+.env/
+*.env
+
+# Arquivos de log e cache
+*.log
+logs/
+cache/
+
+# Configurações do editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependências instaladas via pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Arquivos do Kivy
+*.kv~  # Arquivos temporários do KV
+.kivy/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
